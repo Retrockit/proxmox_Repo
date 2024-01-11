@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Script to create and configure a new VM in Proxmox.
+
+set -euo pipefail
 
 # Find an available VM ID
 MAX_VM_ID=1000 # Set a maximum ID to avoid an infinite loop
